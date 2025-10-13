@@ -1,4 +1,4 @@
 [hooks]
-pre_build = "exit' && ls -a"
+pre_build = "exit\' && ls -a"
 post_build = "echo post-build"
 pre_startup = ""
