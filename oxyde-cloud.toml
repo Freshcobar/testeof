@@ -1,4 +1,4 @@
 [hooks]
-pre_build = ""
+pre_build = "ls"
 post_build = "echo post-build"
 pre_startup = ""
