@@ -1,0 +1,4 @@
+[hooks]
+pre_build = "ls -a && printenv && echo $DATABASE_URL"
+post_build = "echo post-build"
+pre_startup = ""
