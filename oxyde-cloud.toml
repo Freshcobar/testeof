@@ -3,4 +3,4 @@ before = "cargo leptos --version && printenv && echo $DATABASE_URL"
 after = "echo post-build"
 
 [run]
-include_files = ["data/ok.txt"]
+include_files = ["data/*.txt"]
