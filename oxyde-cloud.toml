@@ -1,4 +1,6 @@
-[hooks]
-pre_build = "cargo leptos --version && printenv && echo $DATABASE_URL"
-post_build = "echo post-build"
-pre_startup = ""
+[build.hooks]
+before = "cargo leptos --version && printenv && echo $DATABASE_URL"
+after = "echo post-build"
+
+[run]
+include_files = ["data/*.txt"]
